@@ -843,7 +843,7 @@ static void gba_init(void)
     soundSetSampleRate(SAMPLERATE);
 
     if (option_useBios) {
-        snprintf(biosfile, sizeof(biosfile), "%s%c%s", retro_system_directory, SLASH, "gba_bios.bin");
+        snprintf(biosfile, sizeof(biosfile), "%s%c%s", retro_system_directory, SLASH, "gbx/gba_bios.bin");
         log("Loading bios: %s\n", biosfile);
     }
     CPUInit(biosfile, option_useBios);
@@ -856,7 +856,7 @@ static void gba_init(void)
 
 static void gb_init(void)
 {
-    const char *biosname[] = {"gb_bios.bin", "gbc_bios.bin"};
+    const char *biosname[] = {"gbx/gb_bios.bin", "gbx/gbc_bios.bin"};
 
     log("Loading VBA-M Core (GB/GBC)...\n");
 
