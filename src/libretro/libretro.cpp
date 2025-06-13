@@ -35,6 +35,8 @@
 
 #include "../filters/interframe.hpp"
 
+#define CUSTOM_VERSION "+NC41"
+
 #define FRAMERATE  (16777216.0 / 280896.0) // 59.73
 #define SAMPLERATE 32768.0
 
@@ -565,9 +567,9 @@ void retro_get_system_info(struct retro_system_info *info)
    info->need_fullpath = false;
    info->valid_extensions = "dmg|gb|gbc|cgb|sgb|gba";
 #ifdef GIT_COMMIT
-   info->library_version = VBAM_VERSION " " GIT_COMMIT;
+   info->library_version = VBAM_VERSION " " GIT_COMMIT CUSTOM_VERSION;
 #else
-   info->library_version = VBAM_VERSION;
+   info->library_version = VBAM_VERSION CUSTOM_VERSION;
 #endif
    info->library_name = "VBA-M";
    info->block_extract = false;
