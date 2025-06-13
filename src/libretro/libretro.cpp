@@ -1383,7 +1383,7 @@ void updateInput_SolarSensor(void)
 static void updateInput_Joypad(void)
 {
     unsigned max_buttons = MAX_BUTTONS - ((type == IMAGE_GB) ? 2 : 0); // gb only has 8 buttons
-    int16_t inbuf = 0;
+    int32_t inbuf = 0;
 
     for (unsigned port = 0; port < MAX_PLAYERS; port++)
     {
@@ -1395,7 +1395,7 @@ static void updateInput_Joypad(void)
                 inbuf = input_cb(0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_MASK);
             else
             {
-                for (int i = 0; i < (RETRO_DEVICE_ID_JOYPAD_R3 + 1); i++)
+                for (int i = 0; i < RETRO_DEVICE_ID_JOYPAD_BUTTON_MAX; i++)
                     inbuf |= input_cb(0, RETRO_DEVICE_JOYPAD, 0, i) ? (1 << i) : 0;
             }
 
