@@ -251,47 +251,6 @@ struct retro_core_option_v2_definition option_defs_tr[] = {
         "5"
     },
     {
-        "vbam_turboenable",
-        "Turbo Düğmelerini Etkinleştir",
-        NULL,
-        "Gamepad turbo düğmelerini etkinleştirin veya devre dışı bırakın.",
-        NULL,
-        "input",
-        {
-            { "disabled", NULL },
-            { "enabled",  NULL },
-            { NULL, NULL },
-        },
-        "enabled"
-    },
-    {
-        "vbam_turbodelay",
-        "Turbo Gecikme (kare cinsinden)",
-        NULL,
-        "Karelerde turbo tetikleyicilerin oranını tekrarlayın. Daha yüksek değer daha fazla tetikler.",
-        NULL,
-        "input",
-        {
-            { "1",  NULL },
-            { "2",  NULL },
-            { "3",  NULL },
-            { "4",  NULL },
-            { "5",  NULL },
-            { "6",  NULL },
-            { "7",  NULL },
-            { "8",  NULL },
-            { "9",  NULL },
-            { "10", NULL },
-            { "11", NULL },
-            { "12", NULL },
-            { "13", NULL },
-            { "14", NULL },
-            { "15", NULL },
-            { NULL, NULL },
-        },
-        "3"
-    },
-    {
         "vbam_solarsensor",
         "Solar Sensör Seviyesi",
         NULL,
