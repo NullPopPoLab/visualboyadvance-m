@@ -456,6 +456,10 @@ static struct retro_input_descriptor input_gba[] = {
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_SELECT, "Select" },
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_X,  "Turbo A" },
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Y,  "Turbo B" },
+    { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_L2, "Turbo L" },
+    { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_R2, "Turbo R" },
+    { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G2, "Turbo Start" },
+    { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G1, "Turbo Select" },
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_L3, "Solar Sensor (Darker)" },
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_R3, "Solar Sensor (Lighter)" },
     { 0, 0, 0, 0, NULL },
@@ -472,6 +476,8 @@ static struct retro_input_descriptor input_gb[] = {
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_SELECT, "Select" },
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_X,  "Turbo A" },
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Y,  "Turbo B" },
+    { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G2, "Turbo Start" },
+    { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G1, "Turbo Select" },
     { 0, 0, 0, 0, NULL },
 };
 
@@ -486,6 +492,8 @@ static struct retro_input_descriptor input_sgb[] = {
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_SELECT, "Select" },
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_X,  "Turbo A" },
     { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Y,  "Turbo B" },
+    { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G2, "Turbo Start" },
+    { 0, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G1, "Turbo Select" },
     { 1, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_LEFT,  "D-Pad Left" },
     { 1, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_UP, "D-Pad Up" },
     { 1, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_DOWN,  "D-Pad Down" },
@@ -496,6 +504,8 @@ static struct retro_input_descriptor input_sgb[] = {
     { 1, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_SELECT, "Select" },
     { 1, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_X,  "Turbo A" },
     { 1, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Y,  "Turbo B" },
+    { 1, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G2, "Turbo Start" },
+    { 1, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G1, "Turbo Select" },
     { 2, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_LEFT,  "D-Pad Left" },
     { 2, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_UP, "D-Pad Up" },
     { 2, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_DOWN,  "D-Pad Down" },
@@ -506,6 +516,8 @@ static struct retro_input_descriptor input_sgb[] = {
     { 2, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_SELECT, "Select" },
     { 2, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_X,  "Turbo A" },
     { 2, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Y,  "Turbo B" },
+    { 2, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G2, "Turbo Start" },
+    { 2, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G1, "Turbo Select" },
     { 3, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_LEFT,  "D-Pad Left" },
     { 3, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_UP, "D-Pad Up" },
     { 3, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_DOWN,  "D-Pad Down" },
@@ -516,6 +528,8 @@ static struct retro_input_descriptor input_sgb[] = {
     { 3, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_SELECT, "Select" },
     { 3, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_X,  "Turbo A" },
     { 3, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_Y,  "Turbo B" },
+    { 3, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G2, "Turbo Start" },
+    { 3, RETRO_DEVICE_JOYPAD, 0, RETRO_DEVICE_ID_JOYPAD_G1, "Turbo Select" },
     { 0, 0, 0, 0, NULL },
 };
 
@@ -988,12 +1002,33 @@ void retro_reset(void)
     set_gbPalette();
 }
 
+#define TURBO_A 0
+#define TURBO_B 1
+#define TURBO_L 2
+#define TURBO_R 3
+#define TURBO_START 4
+#define TURBO_SELECT 5
+#define TURBO_BUTTONS 6
+
+typedef struct TurboWork_{
+	uint32_t counter;
+	uint32_t speed;
+	uint32_t dstbtn;
+	uint32_t srcbtn;
+	const char* config;
+} TurboWork;
+TurboWork turboWork[TURBO_BUTTONS]={
+	{0,0x2800,RETRO_DEVICE_ID_JOYPAD_A,RETRO_DEVICE_ID_JOYPAD_X,"vbam_turbo_speed_a"},
+	{0,0x2800,RETRO_DEVICE_ID_JOYPAD_B,RETRO_DEVICE_ID_JOYPAD_Y,"vbam_turbo_speed_b"},
+	{0,0x2800,RETRO_DEVICE_ID_JOYPAD_L,RETRO_DEVICE_ID_JOYPAD_L2,"vbam_turbo_speed_l"},
+	{0,0x2800,RETRO_DEVICE_ID_JOYPAD_R,RETRO_DEVICE_ID_JOYPAD_R2,"vbam_turbo_speed_r"},
+	{0,0x2800,RETRO_DEVICE_ID_JOYPAD_START,RETRO_DEVICE_ID_JOYPAD_G2,"vbam_turbo_speed_start"},
+	{0,0x2800,RETRO_DEVICE_ID_JOYPAD_SELECT,RETRO_DEVICE_ID_JOYPAD_G1,"vbam_turbo_speed_select"},
+};
+unsigned turbo_ratio=0x8000;
+
 #define MAX_PLAYERS 4
 #define MAX_BUTTONS 10
-#define TURBO_BUTTONS 2
-static bool option_turboEnable = false;
-static unsigned option_turboDelay = 3;
-static unsigned turbo_delay_counter[MAX_PLAYERS][TURBO_BUTTONS] = {{0}, {0}};
 static const unsigned binds[MAX_BUTTONS] = {
     RETRO_DEVICE_ID_JOYPAD_A,
     RETRO_DEVICE_ID_JOYPAD_B,
@@ -1005,11 +1040,6 @@ static const unsigned binds[MAX_BUTTONS] = {
     RETRO_DEVICE_ID_JOYPAD_DOWN,
     RETRO_DEVICE_ID_JOYPAD_R,
     RETRO_DEVICE_ID_JOYPAD_L
-};
-
-static const unsigned turbo_binds[TURBO_BUTTONS] = {
-    RETRO_DEVICE_ID_JOYPAD_X,
-    RETRO_DEVICE_ID_JOYPAD_Y
 };
 
 static void systemUpdateSolarSensor(int level);
@@ -1146,17 +1176,22 @@ static void update_variables(bool startup)
         option_colorizerHack = (!strcmp(var.value, "enabled")) ? true : false;
     }
 
-    var.key = "vbam_turboenable";
+	// turbo speed 
+	for(TurboWork* tw=&turboWork[0];tw<&turboWork[TURBO_BUTTONS];++tw){
+		var.key = tw->config;
+		if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
+		{
+			tw->speed=atoi(var.value)*0x800;
+		}
+		else tw->speed=0x2800;
+	}
 
-    if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value) {
-        option_turboEnable = (!strcmp(var.value, "enabled")) ? true : false;
-    }
-
-    var.key = "vbam_turbodelay";
-
-    if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value) {
-        option_turboDelay = atoi(var.value);
-    }
+	var.key = "vbam_turbo_ratio";
+	if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
+	{
+		turbo_ratio=0x10000-(atoi(var.value)*0x1000)&0xffff;
+	}
+	else turbo_ratio=0x8000;
 
     var.key = "vbam_astick_deadzone";
     var.value = NULL;
@@ -1399,25 +1434,23 @@ static void updateInput_Joypad(void)
                     inbuf |= input_cb(0, RETRO_DEVICE_JOYPAD, 0, i) ? (1 << i) : 0;
             }
 
+			// turbo 
+			for(TurboWork* tw=&turboWork[0];tw<&turboWork[TURBO_BUTTONS];++tw){
+				if(inbuf&(1<<tw->srcbtn)){
+					if(!tw->speed)inbuf|=1<<tw->dstbtn;
+					else{
+						tw->counter-=tw->speed;
+						if((tw->counter&0xffff)>=turbo_ratio)inbuf|=1<<tw->dstbtn;
+					}
+				}
+				else{
+					tw->counter=0;
+				}
+			}	
+
             for (unsigned button = 0; button < max_buttons; button++)
                 input_buf[port] |= (inbuf & (1 << binds[button])) ? (1 << button) : 0;
 
-            if (option_turboEnable) {
-                /* Handle Turbo A & B buttons */
-                for (unsigned tbutton = 0; tbutton < TURBO_BUTTONS; tbutton++) {
-                    if (input_cb(port, RETRO_DEVICE_JOYPAD, 0, turbo_binds[tbutton])) {
-                        if (!turbo_delay_counter[port][tbutton])
-                            input_buf[port] |= 1 << tbutton;
-                        turbo_delay_counter[port][tbutton]++;
-                        if (turbo_delay_counter[port][tbutton] > option_turboDelay)
-                            /* Reset the toggle if delay value is reached */
-                            turbo_delay_counter[port][tbutton] = 0;
-                    }
-                    else
-                        /* If the button is not pressed, just reset the toggle */
-                        turbo_delay_counter[port][tbutton] = 0;
-                }
-            }
             // Do not allow opposing directions
             if ((input_buf[port] & 0x30) == 0x30)
                 input_buf[port] &= ~(0x30);
